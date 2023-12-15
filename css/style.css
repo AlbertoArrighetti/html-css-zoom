@@ -4,15 +4,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #000000;
+    font-family: sans-serif;
+}
 
 main{
     width: 100%;
     height: 100vh;
 }
-body{
-    background-color: #000000;
+/* speaker section */
+.speaker{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
 }
-/* inizio section */
+.speaker .speaker-text{
+    padding: 6px 4px;
+    border-radius: 6px;
+    margin: 0 4px;
+
+    font-size: 12px;
+
+    color: white;
+    background-color: #4a4a4a;
+}
+
+
+/* inizio img section */
 
 #container{
     width: 100%;
@@ -49,6 +73,8 @@ body{
     left: 0;
 
     padding: 6px;
+
+    font-size: 12px;
 
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
