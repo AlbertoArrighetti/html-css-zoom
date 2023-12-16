@@ -19,6 +19,8 @@ main{
     top: 0;
     right: 0;
 
+    margin: 0px 24px;
+
     display: flex;
     align-items: center;
 
@@ -40,8 +42,7 @@ main{
 
 #container{
     width: 100%;
-    height: calc(100vh - 100px);
-    padding: 70px 90px;
+    height: calc(100vh - 80px);
 }
 .img-container{
     display: flex;
@@ -49,7 +50,14 @@ main{
     justify-content: center;
     justify-content: space-evenly;
 
+    height: 100vh;
+
     gap: 2px;
+    padding: 100px 90px;
+
+    /* bonus: ho usato auto al posto di scroll per evitare che la 
+    barra di scorrimento fosse sempre visibile  */
+    overflow-y: auto;
 }
 
 #container .img-box{
@@ -80,20 +88,65 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
 /* navbar */
 
 nav{
-    height: 100px;
+    height: 80px;
     /* test */
 
     width: 100%;
 
     position: fixed;
     bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
 
     background-color: #222222;
+}
+#left{
+    min-width: 220px
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+.icons .fa-chevron-up{
+    font-size: 10px;
+}
+.icons .icon-text{
+    font-size: 12px;
+}
+.icons .icon{
+    font-size: 32px;
+
+    padding: 12px 0;
+}
+.icons .icon.green{
+    color: #4bc800;
+}
+
+#center{
+    width: auto;
+    display: flex;
+    gap: 20px;
+}
+
+
+.end-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 22px;
+
+
+    background-color: #4a4a4a;
+    color: red;
 }
