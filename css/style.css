@@ -48,11 +48,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 
     height: 100vh;
 
-    gap: 2px;
+    gap: 16px 6px;
     padding: 100px 90px;
 
     /* bonus: ho usato auto al posto di scroll per evitare che la 
@@ -64,7 +65,7 @@ main{
     margin-bottom: 10px;
     position: relative;
 
-    width: 260px;
+    width: 250px;
     height: 150px;
 }
 #container img{
