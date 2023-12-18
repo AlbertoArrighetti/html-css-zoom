@@ -54,7 +54,7 @@ main{
     height: 100vh;
 
     gap: 16px 6px;
-    padding: 100px 90px;
+    padding: 100px 16px;
 
     /* bonus: ho usato auto al posto di scroll per evitare che la 
     barra di scorrimento fosse sempre visibile  */
